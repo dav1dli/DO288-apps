@@ -5,7 +5,7 @@ pipeline {
     }
     agent {
       node {
-        //TODO: Add label for Node.js jenkins agent
+        label 'nodejs'
       }
     }
 
@@ -13,7 +13,7 @@ pipeline {
         //TODO: Edit these vars as per your env
         DEV_PROJECT = "youruser-books-dev"
         STAGE_PROJECT = "youruser-books-stage"
-        APP_GIT_URL = "https://github.com/youruser/DO288-apps"
+        APP_GIT_URL = "https://github.com/dav1dli/DO288-apps.git"
         NEXUS_SERVER = "http://nexus-common.apps.cluster.domain.example.com/repository/nodejs"
 
         // DO NOT CHANGE THE GLOBAL VARS BELOW THIS LINE
